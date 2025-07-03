@@ -1,0 +1,44 @@
+{
+    "type": "record",
+    "name": "AutoRecord",
+    "fields": [
+        {
+            "name": "alert_type",
+            "type": "string"
+        },
+        {
+            "name": "event_trigger_timestamp",
+            "type": "string"
+        },
+        {
+            "name": "is_test",
+            "type": "boolean"
+        },
+        {
+            "name": "is_update",
+            "type": "boolean"
+        },
+        {
+            "name": "source",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "long"
+        },
+        {
+            "name": "reward_map",
+            "type": {
+                "type": "array",
+                "items": "int"
+            }
+        },
+        {
+            "name": "instrument",
+            "type": {
+                "type": "array",
+                "items": "string"
+            }
+        }
+    ]
+}
